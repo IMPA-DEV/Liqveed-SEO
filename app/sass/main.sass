@@ -1,0 +1,276 @@
+@import "vars"
+
+*
+	margin: 0
+	padding: 0
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $main-color
+	color: #fff
+
+body
+	max-width: 1920px
+	width: 100%
+	margin: 0 auto
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $poppins-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.container
+	max-width: 1170px
+	padding: 0 15px
+	box-sizing: border-box
+	margin: 0 auto
+
+b, strong
+	font-weight: bold
+img
+	display: block
+
+#top-line
+	position: fixed
+	top: 0
+	margin: 0
+	left: 0
+	right: 0
+	.container
+		max-width: 1706px
+		width: 100%
+		margin: 0 auto
+	.top-line
+		display: flex
+		align-items: center
+		justify-content: space-between
+		&-socials
+			ul
+				display: flex
+				align-items: center
+				list-style-type: none
+				li
+					margin-left: 15px
+
+		&-logo
+			width: 230px
+			img
+				width: 100%
+				height: auto
+		&-nav
+			ul
+				display: flex
+				li
+					list-style-type: none
+					position: relative
+					padding: 0 15px
+					.nav-toggle
+						display: none
+						flex-direction: column
+						align-items: center
+						text-align: center
+						justify-content: center
+						left: 0
+						opacity: 0
+						position: absolute
+						transition: 0.3s
+						top: 90%
+						li
+							padding: 0
+					a
+						text-transform: uppercase
+						color: #ffffff
+						text-decoration: none
+						transition: 0.3s
+						font-weight: 700
+						font-size: 14px
+						&:hover,
+						&.active
+							color: $main-color
+							transition: 0.3s
+					&:hover > ul
+						display: block
+						opacity: 1
+						transition: 0.3s
+						top: 100%
+			&-dop
+				position: relative
+				.dop-nav
+					right: 0
+					width: 293px
+					position: absolute
+					top: 20px
+					ul
+						display: flex
+						align-items: center
+						list-style-type: none
+						li
+							border-right: 1px solid #929aa3
+							padding: 0 15px
+							line-height: 1
+							&:last-child
+								border-right: none
+							a
+								color: #ffffff
+								font-size: 14px
+								font-family: $openSan-font
+								font-weight: 300
+								opacity: 0.66
+
+				.dop-nav-login
+					padding: 24px 0
+					display: flex
+					align-items: center
+					justify-content: flex-end
+					padding-left: 50px
+					p a
+						color: #ffffff
+						font-size: 14px
+						font-weight: 700
+						text-transform: uppercase
+						text-decoration: none
+						transition: 0.3s
+						margin-right: 12px
+						&:hover
+							color: $main-color
+							transition: 0.3s
+
+#footer
+	background-image: url("../img/bg-footer.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	.border
+		border-bottom: 1px solid #e4e8e8
+	.footer
+		&-form
+			padding: 67px 0
+			p
+				color: #fff
+				font-size: 48px
+				font-weight: bold
+				font-family: $poppins-font
+				text-align: center
+				text-transform: uppercase
+				line-height: 1.2
+			.form-wrap
+				display: flex
+				align-items: center
+				justify-content: center
+				border-radius: 5px
+				overflow: hidden
+				&-block
+					text-align: center
+					padding-top: 25px
+			form
+				display: inline-block
+				input
+					border: none
+					color: #ffffff
+					height: 66px
+					box-sizing: border-box
+					background-color: $main-color
+				input[type="submit"]
+					font-size: 24px
+					font-family: $poppins-font
+					font-weight: 600
+					cursor: pointer
+					width: 290px
+				input[type="email"]
+					background-color: transparent
+					border: 2px solid $main-color
+					width: 450px
+					padding: 0 15px
+					border-radius: 5px 0 0 5px
+					color: #fff
+					font-size: 24px
+					font-family: $poppins-font
+					&::placeholder
+						color: #fff
+						font-size: 24px
+						font-family: $poppins-font
+					&:focus
+						color: #ffffff
+						transition: 0.3s
+						&::placeholder
+							color: transparent
+							transition: 0.3s
+
+		&-copy
+			color: #fff
+			font-size: 14px
+			font-family: $poppins-font
+			text-align: center
+			background-color: $main-color
+			padding: 6px 0px
+		&-socials
+			padding-top: 45px
+			ul
+				list-style-type: none
+				display: flex
+				align-items: center
+				justify-content: flex-end
+				li
+					margin-left: 30px
+					&:first-child
+						margin-left: 0
+		&-nav
+			&-wrap
+				padding: 47px 0 67px
+				display: flex
+				justify-content: space-between
+			&-right
+				ul
+					list-style-type: none
+				a
+					color: #ffffff
+					font-size: 24px
+					text-decoration: none
+					font-family: $poppins-font
+					transition: 0.3s
+					&:hover
+						color: $main-color
+						transition: 0.3s
+			&-dop
+				display: flex
+				justify-content: space-between
+				ul
+					margin: 0 10px
+					width: 166px
+					text-align: center
+					li
+						line-height: 1
+						padding-bottom: 25px
+						a
+							line-height: 1
+			&-links
+				padding-top: 27px
+				ul
+					display: flex
+					text-align: center
+					align-items: center
+					justify-content: center
+					li
+						border-right: 3px solid #e4e9e9
+						padding: 0 30px
+						line-height: 1
+						opacity: 0.66
+						&:last-child
+							border-right: none
+						a
+							font-weight: normal
+							text-decoration: underline
+							line-height: 1
+
+@import "home-page"
