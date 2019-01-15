@@ -30,6 +30,25 @@ body
 		&:required:valid
 			border-color: green
 
+.btn-main
+  color: #fff
+  text-decoration: none
+  text-transform: uppercase
+  font-size: 14px
+  line-height: 1
+  font-family: $poppins-font
+  font-weight: bold
+  text-align: center
+  background: linear-gradient(to right, #82f5f5, #08c6c6)
+  padding: 23px 71px
+  display: inline-block
+  border-radius: 50px
+  border: 6px solid #b4efef
+  transition: 0.3s
+  &:hover
+    background: linear-gradient(to left, #82f5f5, #08c6c6)
+    transition: 0.3s
+
 .container
 	max-width: 1170px
 	padding: 0 15px
@@ -47,6 +66,7 @@ img
 	margin: 0
 	left: 0
 	right: 0
+	z-index: 1
 	.container
 		max-width: 1706px
 		width: 100%
@@ -145,6 +165,652 @@ img
 						&:hover
 							color: $main-color
 							transition: 0.3s
+
+
+.section-padding
+	padding: 200px 0
+
+.title-block
+	text-align: center
+	padding-bottom: 80px
+	&-p
+		font-family: $satisfy-font
+		font-size: 32px
+		color: $main-color
+		text-align: center
+		position: relative
+		display: inline-block
+		&:before,
+		&:after
+			content: ""
+			position: absolute
+			background-color: $main-color
+			width: 40px
+			height: 2px
+			top: 49%
+		&:before
+			left: -60px
+		&:after
+			right: -60px
+	&-h2
+		margin: 0
+		font-size: 48px
+		color: #909090
+		text-align: center
+		font-weight: bold
+		font-family: $ubuntus-font
+		line-height: 1
+#home
+	position: relative
+	margin-bottom: 100px
+
+.home-sidebar
+	position: absolute
+	right: 0
+	top: 27%
+	ul
+		list-style-type: none
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		span
+			background-color: #fff
+			height: 80px
+			width: 80px
+			display: block
+			border-radius: 50%
+			box-shadow: 0 0 26px #f1eeee
+		li
+			width: 265px
+			background-color: #fff
+			transition: 0.3s
+			border-radius: 54px 0 0 54px
+			margin: 15px 0
+			&:hover
+				width: 285px
+				background: linear-gradient(to right, #82f5f5, #08c6c6)
+				transition: 0.3s
+				p
+					color: #fff
+			a
+				width: 100%
+				height: 100%
+				padding: 20px 25px
+				display: flex
+				align-items: center
+				text-transform: uppercase
+				text-decoration: none
+				box-sizing: border-box
+			p
+				color: #909090
+				font-size: 14px
+				font-weight: bold
+				font-family: $poppins-font
+				text-transform: uppercase
+				padding-left: 15px
+
+
+.dop-home
+	position: absolute
+	width: 100%
+	left: 0
+	right: 0
+	bottom: -100px
+	&-text
+		.about
+			font-family: $ubuntus-font
+			font-size: 24px
+			color: #fff
+			line-height: 1.3
+		.about-descr
+			padding-top: 20px
+			.who
+				color: $main-color
+				font-size: 14px
+				text-transform: uppercase
+				font-family: $poppins-font
+				line-height: 1
+				font-weight: bold
+			.when
+				font-size: 16px
+				color: #ffffff
+				font-family: $poppins-font
+	&-wrap
+		display: flex
+		align-items: flex-end
+	&-descr
+		background-color: #f7f7f7
+		width: 40%
+		height: 100px
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		.dop-title
+			padding-right: 20px
+		h2
+			color: $main-color
+			font-size: 42px
+			font-family: $satisfy-font
+			font-weight: normal
+	&-material
+		background-color: #323232
+		width: 60%
+		height: 200px
+		&-wrap
+			max-width: 754px
+			padding-left: 30px
+			width: 100%
+			display: flex
+			height: inherit
+			align-items: center
+			justify-content: space-between
+
+.our-vibe
+	&-wrap
+		display: flex
+		padding-bottom: 70px
+		.title-block
+			text-align: right
+			padding-top: 40px
+			&-p
+				text-align: right
+				&:after
+					display: none
+	&-list
+		padding-top: 60px
+		ul
+			list-style-type: none
+			display: flex
+			justify-content: flex-end
+		li
+			border: 1px solid #00b063
+			border-radius: 5px
+			height: 104px
+			width: 104px
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-left: 24px
+			&:first-child
+				margin-left: 0
+			p
+				color: #808284
+				font-size: 21px
+				text-align: center
+				span
+					font-weight: bold
+					display: block
+					font-size: 26px
+					line-height: 1
+	&-text
+		color: #787878
+		font-size: 16px
+		font-family: $poppins-font
+		font-weight: 300
+		text-align: right
+		width: 460px
+		display: inline-block
+		p
+			line-height: 1.8
+	&-block
+		width: 50%
+		box-sizing: border-box
+		position: relative
+		img
+			position: absolute
+			bottom: -80px
+			left: 0
+		&:first-child
+			padding-right: 90px
+			text-align: right
+		&:last-child
+			padding-left: 90px
+	&-img
+		background-image: url("../img/wallpaper.jpg")
+		height: 490px
+		width: 100%
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.56)
+
+.shop-section
+	&.section-padding
+		padding-bottom: 100px
+	.shop-sale
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
+		height: 220px
+		&-wrap
+			display: flex
+			align-items: center
+			justify-content: space-between
+			> div
+				width: 48.5%
+		&.sale-1
+			background-image: url("../img/sale-1.jpg")
+		&.sale-2
+			background-image: url("../img/sale-2.jpg")
+
+.shop-sale
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  padding: 27px
+  box-sizing: border-box
+  &-text
+    text-transform: uppercase
+    color: #ffffff
+    display: flex
+    h3
+      font-family: $poppins-font
+      font-size: 60px
+      line-height: 1
+      margin: 0
+    .text-dop
+      margin-left: 20px
+      padding-top: 4px
+      h4
+        font-family: $poppins-font
+        font-size: 32px
+        line-height: 1
+        margin: 0
+      p
+        font-family: $poppins-font
+        font-size: 14px
+        line-height: 1
+        padding-top: 3px
+  &-btn
+    padding-bottom: 9px
+    a
+      color: $main-color
+      font-size: 14px
+      font-weight: bold
+      text-align: center
+      text-decoration: none
+      text-transform: uppercase
+      background-color: #ffffff
+      border-radius: 25px
+      display: inline-block
+      padding: 11px 47px
+      transition: 0.3s
+      &:hover
+        transition: 0.3s
+        background-color: $main-color
+        color: #fff
+
+.products-slider-about
+	position: relative
+.products-slider
+	display: flex
+	&-img-wrap
+		min-width: 45%
+		padding-bottom: 50px
+	&-about
+		min-width: 55%
+.products-slider
+  &-about
+    background-color: #f7f7f7
+    padding: 90px 15px 90px 98px
+    .title-block
+      padding-top: 50px
+      padding-bottom: 60px
+      text-align: left
+      padding-left: 60px
+      &-p
+        text-align: left
+        &:after
+          display: none
+    .name-products
+      h3
+        color: #909090
+        font-family: $ubuntus-font
+        font-size: 48px
+        text-transform: uppercase
+        line-height: 1
+      h4
+        color: #909090
+        font-family: $ubuntus-font
+        font-weight: normal
+        font-size: 48px
+        text-transform: uppercase
+        line-height: 1
+    .descr-products
+      max-width: 460px
+      padding-top: 18px
+      p
+        color: #000
+        font-family: $openSan-font
+        font-size: 16px
+    .products-btn
+      padding-top: 30px
+
+  &-navigation
+	  position: absolute
+	  top: 110px
+	  left: -45px
+	  ul
+		  display: flex
+		  flex-direction: column
+		  list-style-type: none
+		  img
+			  margin: 0 auto
+			  transition: 0.3s
+			  filter: grayscale(100%)
+		  li
+			  text-align: center
+			  cursor: pointer
+			  transition: 0.3s
+			  padding: 10px
+			  &.active,
+			  &:hover
+				  img
+					  filter: grayscale(0%)
+					  transition: 0.3s
+					  box-shadow: 0 1px 2px rgba(12, 204, 204, 0.5)
+					  border-radius: 50%
+			  p
+				  color: #999999
+				  font-size: 14px
+				  font-family: $openSan-font
+				  padding-top: 5px
+  &-img
+	  display: none
+	  height: 100%
+	  .img-wrap
+		  display: flex
+		  align-items: center
+		  justify-content: center
+		  height: 100%
+	  &.active
+		  display: block
+  &-text
+	  display: none
+	  &.active
+		  display: block
+
+.descr-products
+	height: 160px
+
+.shop
+	&-slider
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&-wrap
+		&-slider
+			padding: 65px 0 100px
+		&-navigation
+			ul
+				display: flex
+				align-items: center
+				justify-content: center
+				list-style-type: none
+				li
+					margin: 0 15px
+					a
+						font-size: 14px
+						line-height: 1
+						text-decoration: none
+						color: #909090
+						text-align: center
+						text-transform: uppercase
+						font-family: $poppins-font
+						font-weight: 600
+						border-radius: 15px
+						border: 1px solid #e5e5e5
+						padding: 4px 33px
+						transition: 0.3s
+						//display: inline-block
+						&.active,
+						&:hover
+							color: #fff
+							background: linear-gradient(to right, #82f5f5, #08c6c6)
+							border: 6px solid #b4efef
+							transition: 0.3s
+	&-slider-block
+		display: inline-block
+		text-align: center
+		box-shadow: 0 0 20px rgba(169, 169, 169, 0.21)
+		border-radius: 5px
+		padding: 27px 10px 67px
+		width: 336px
+		position: relative
+		border: 5px solid transparent
+		box-sizing: border-box
+		&:hover
+			transition: 1s
+			border: 5px solid #0ccccc
+			.shop-img
+				filter: blur(3px)
+				transition: 0.3s
+			.shop-nav
+				transition: 0.3s
+				opacity: 1
+				top: 35%
+			.shop-descr .name
+				color: $main-color
+
+		.shop-action
+			height: 72px
+			background-repeat: no-repeat
+			background-position: left center
+			margin: 0 20px
+			&.new
+				background-image: url("../img/new.png")
+			&.sale
+				background-image: url("../img/sale.png")
+		.shop-img
+			height: 250px
+			display: flex
+			align-items: center
+			justify-content: center
+			img
+				margin: 0 auto
+		.shop-nav
+			opacity: 0
+			position: absolute
+			top: 38%
+			left: 0
+			width: 100%
+			transition: 0.3s
+			&-wrap
+				display: flex
+				align-items: center
+				justify-content: center
+				a
+					color: #fff
+					background-color: #909090
+					height: 60px
+					width: 60px
+					text-align: center
+					border-radius: 50%
+					display: flex
+					align-items: center
+					justify-content: center
+					text-decoration: none
+					margin: 5px
+					transition: 0.3s
+					&:hover
+						background: linear-gradient(to right, #82f5f5, #08c6c6)
+						transition: 0.3s
+
+
+		.shop-descr
+			padding-top: 53px
+			.cost
+				color: $main-color
+				font-size: 16px
+				font-family: $poppins-font
+				font-weight: bold
+			.name
+				color: #909090
+				font-size: 24px
+				font-family: $ubuntus-font
+				font-weight: 500
+			.stars
+				color: #909090
+				padding-top: 2px
+
+.solution
+	&-section
+		background-color: #f1f1f1
+		background-image: url("../img/bg-solution.jpg")
+		background-position: center bottom
+		background-repeat: no-repeat
+		padding: 30px 0 50px
+		height: 480px
+		.container
+			height: inherit
+	&-title
+		font-family: $openSan-font
+		color: $main-color
+		font-weight: bold
+		font-size: 74px
+		text-transform: uppercase
+		line-height: 1.1
+	&-block
+		display: flex
+		align-items: center
+		&-wrap
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			height: inherit
+		.vibe
+			padding-left: 20px
+			img
+				display: inline-block
+				height: 19px
+			p
+				color: #909090
+				font-size: 26px
+				text-transform: uppercase
+				line-height: 1.1
+				font-family: $openSan-font
+
+.blog
+	&-list
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		flex-wrap: wrap
+		&-block
+			width: 32%
+			transition: 0.3s
+			padding: 10px
+			box-sizing: border-box
+			margin-bottom: 40px
+			&:nth-last-child(-n+3)
+				margin-bottom: 0
+			&:hover
+				background-color: $main-color
+				transition: 0.3s
+				h3
+					color: #fff
+			a
+				text-decoration: none
+			h3
+				font-family: $poppins-font
+				font-size: 42px
+				text-align: center
+				color: $main-color
+				line-height: 1.14
+				margin: 0
+				font-weight: normal
+		&-img
+			padding-top: 15px
+			img
+				max-width: 100%
+				height: auto
+
+.socials
+	&-section
+		background-color: $main-color
+		padding: 12px 0 8px
+	&-wrap
+		display: flex
+		align-items: center
+		justify-content: space-around
+		text-align: center
+		.socials-block
+			p
+				font-size: 110px
+				color: $main-color
+				text-shadow: 0 0 20px #ffffff
+				margin: 0
+				padding: 0
+				line-height: 1
+			a
+				color: #ffffff
+				text-decoration: none
+				font-size: 16px
+
+.testimonials
+	&-slider-block
+		display: flex
+		align-items: center
+		justify-content: space-around
+	&-img
+		width: 476px
+		height: 476px
+		border-radius: 50%
+		border: 15px solid #85e5e5
+		box-sizing: border-box
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+	&-user
+		h3
+			font-family: $ubuntus-font
+			font-size: 32px
+			font-weight: bold
+			color: #909090
+		p
+			color: rgba(144, 144, 144, 0.65)
+			font-size: 14px
+			text-transform: uppercase
+			font-family: $poppins-font
+			font-weight: bold
+	&-about
+		text-align: center
+		border-left: 1px solid #e5e5e5
+		padding: 40px 20px 40px 70px
+	&-text
+		padding: 40px 0
+		max-width: 407px
+		width: 100%
+		text-align: center
+		display: inline-block
+		p
+			color: #787878
+			font-size: 16px
+			font-family: $poppins-font
+			font-weight: 300
+	&-soc
+		ul
+			list-style-type: none
+			display: flex
+			align-items: center
+			justify-content: center
+		li a
+			border-radius: 50%
+			width: 60px
+			height: 60px
+			display: flex
+			align-items: center
+			justify-content: center
+			color: #ffffff
+			text-decoration: none
+			transition: 0.3s
+			margin: 0 5px
+			&.s-f
+				background-color: #3f5fa3
+			&.s-t
+				background-color: #55acee
+			&.s-g
+				background-color: #dd4b39
+			&:hover
+				opacity: 0.8
+				transition: 0.3s
 
 #footer
 	background-image: url("../img/bg-footer.jpg")
