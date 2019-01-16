@@ -4,7 +4,6 @@
 <head>
 
 	<meta charset="utf-8">
-	<!-- <base href="/"> -->
 
 	<title>Liqveed Home</title>
 	<meta name="description" content="">
@@ -26,6 +25,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800|Poppins:300,400,600,700|Satisfy|Ubuntu:400,500,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<!--Fonts End-->
+
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 
 	<link rel="stylesheet" href="css/main.min.css">
 
@@ -102,6 +104,31 @@
 	<section id="home">
 		<div class="container">
 
+			<div class="home-main-block-wrap">
+				<div class="home-main-block bg-1">
+					<div class="home-main-block bg-2">
+
+						<div class="home-main-block-text-wrap">
+							<!-- Title -->
+							<div class="title-block">
+								<p class="title-block-p">New Product!</p>
+							</div>
+
+							<div class="text-block">
+								<h1 class="main-h1">Liqveed Vibe<br>New Gen of Vapes </h1>
+								<p>Get the right effect at the right time</p>
+							</div>
+
+							<div class="home-btn">
+								<a class="btn-main" href="#">Get VIBE</a>
+								<p>$199.99</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
 		</div>
 
 		<!--Home Sidebar NAV-->
@@ -154,8 +181,6 @@
 		</div>
 	</section>
 
-
-
 	<!-- Our Vibe -->
 	<section class="our-vibe section-padding">
 		<div class="our-vibe-wrap">
@@ -193,12 +218,12 @@
 
 				<!--IMG products-->
 				<div class="products-slider-img-wrap">
-					<div class="products-slider-img slider-img-1"><div class="img-wrap"><img src="https://liqveed.com/img/product-sun-vibe.png" alt=""></div></div>
-					<div class="products-slider-img slider-img-2"><div class="img-wrap"><img src="https://liqveed.com/img/product-sun-vibe.png" alt=""></div></div>
-					<div class="products-slider-img slider-img-3"><div class="img-wrap"><img src="https://liqveed.com/img/product-sun-vibe.png" alt=""></div></div>
+					<div class="products-slider-img slider-img-1"><div class="img-wrap"><img src="img/p-sun.png" alt="sun vibe"></div></div>
+					<div class="products-slider-img slider-img-2"><div class="img-wrap"><img src="img/p-moon.png" alt="moon vibe"></div></div>
+					<div class="products-slider-img slider-img-3"><div class="img-wrap"><img src="img/p-ocean.png" alt="ocean vibe"></div></div>
 					<div class="active products-slider-img slider-img-4"><div class="img-wrap"><img src="img/p-mountains.png" alt="mountains vibe"></div></div>
-					<div class="products-slider-img slider-img-5"><div class="img-wrap"><img src="https://liqveed.com/img/product-sun-vibe.png" alt=""></div></div>
-					<div class="products-slider-img slider-img-6"><div class="img-wrap"><img src="https://liqveed.com/img/product-sun-vibe.png" alt=""></div></div>
+					<div class="products-slider-img slider-img-5"><div class="img-wrap"><img src="img/p-sky.png" alt="sky vibe"></div></div>
+					<div class="products-slider-img slider-img-6"><div class="img-wrap"><img src="img/p-forest.png" alt="forest vibe"></div></div>
 				</div>
 
 				<!--Text products-->
@@ -317,22 +342,22 @@
 					<!--Slider navigation-->
 					<div class="products-slider-navigation">
 						<ul>
-							<li><img src="img/icons-pag/p-sun.png" alt="sun vibe">
+							<li class="s-1"><img src="img/icons-pag/p-sun.png" alt="sun vibe">
 								<p>Sun</p>
 							</li>
-							<li><img src="img/icons-pag/p-moon.png" alt="moon vibe">
+							<li class="s-2"><img src="img/icons-pag/p-moon.png" alt="moon vibe">
 								<p>Moon</p>
 							</li>
-							<li><img src="img/icons-pag/p-ocean.png" alt="ocean vibe">
+							<li class="s-3"><img src="img/icons-pag/p-ocean.png" alt="ocean vibe">
 								<p>Ocean</p>
 							</li>
-							<li class="active"><img src="img/icons-pag/p-mountain.png" alt="mountains vibe">
+							<li class="s-4 active"><img src="img/icons-pag/p-mountain.png" alt="mountains vibe">
 								<p>Mountains</p>
 							</li>
-							<li><img src="img/icons-pag/p-sky.png" alt="sky vibe">
+							<li class="s-5"><img src="img/icons-pag/p-sky.png" alt="sky vibe">
 								<p>Sky</p>
 							</li>
-							<li><img src="img/icons-pag/p-forest.png" alt="forest vibe">
+							<li class="s-6"><img src="img/icons-pag/p-forest.png" alt="forest vibe">
 								<p>Forest</p>
 							</li>
 						</ul>
@@ -358,10 +383,9 @@
 
 				<div class="shop-wrap-navigation">
 					<ul>
-						<li><a class="active" href="#">All</a></li>
-						<li><a href="#">Vibe</a></li>
-						<li><a href="#">Products</a></li>
-						<li><a href="#">Effects</a></li>
+						<li><button type="button" class="active" data-filter="all">All</button></li>
+						<li><button type="button" data-filter=".vibe">Vibe</button></li>
+						<li><button type="button" data-filter=".effects">Effects</button></li>
 					</ul>
 				</div>
 
@@ -369,7 +393,7 @@
 				<div class="shop-wrap-slider">
 					<div class="shop-slider">
 
-						<div class="shop-slider-block-wrap">
+						<div class="mix vibe shop-slider-block-wrap">
 							<div class="shop-slider-block">
 								<div class="shop-action new"></div>
 								<div class="shop-img">
@@ -396,8 +420,7 @@
 								</div>
 							</div>
 						</div>
-
-						<div class="shop-slider-block-wrap">
+						<div class="mix effects shop-slider-block-wrap">
 							<div class="shop-slider-block">
 								<div class="shop-action"></div>
 								<div class="shop-img">
@@ -424,8 +447,62 @@
 								</div>
 							</div>
 						</div>
+						<div class="mix vibe shop-slider-block-wrap">
+							<div class="shop-slider-block">
+								<div class="shop-action sale"></div>
+								<div class="shop-img">
+									<img src="img/shop-slider/mountains.png" alt="mountains vibe">
+								</div>
+								<div class="shop-nav">
+									<div class="shop-nav-wrap">
+										<a href="#"><i class="fas fa-heart"></i></a>
+										<a href="#"><i class="fas fa-shopping-cart"></i></a>
+										<a href="#"><i class="fas fa-search"></i></a>
+									</div>
+								</div>
+								<div class="shop-descr">
+									<p class="cost">$220.56</p>
+									<p class="name">Mountains Vibe</p>
 
-						<div class="shop-slider-block-wrap">
+									<div class="stars">
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mix effects shop-slider-block-wrap">
+							<div class="shop-slider-block">
+								<div class="shop-action"></div>
+								<div class="shop-img">
+									<img src="img/shop-slider/forest.png" alt="forest vibe">
+								</div>
+								<div class="shop-nav">
+									<div class="shop-nav-wrap">
+										<a href="#"><i class="fas fa-heart"></i></a>
+										<a href="#"><i class="fas fa-shopping-cart"></i></a>
+										<a href="#"><i class="fas fa-search"></i></a>
+									</div>
+								</div>
+								<div class="shop-descr">
+									<p class="cost">$220.56</p>
+									<p class="name">Forest Vibe</p>
+
+									<div class="stars">
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mix vibe shop-slider-block-wrap">
 							<div class="shop-slider-block">
 								<div class="shop-action sale"></div>
 								<div class="shop-img">
@@ -544,7 +621,59 @@
 						</div>
 					</div>
 
+					<div>
+						<div class="testimonials-slider-block">
+							<div class="testimonials-img" style="background-image: url('img/user.jpg')"></div>
+							<div class="testimonials-about">
+								<div class="testimonials-user">
+									<h3>Jane Richards</h3>
+									<p>Seo</p>
+								</div>
+
+								<div class="testimonials-text">
+									<p>Cannabis definitely helps me with some health issues, but let’s be honest, I simply enjoy cannabis! Even though consuming cannabis is legal in CA now, you can’t walk down the street and smoke a joint... the attention it attracts is always negative!!</p>
+								</div>
+
+								<div class="testimonials-soc">
+									<ul>
+										<li><a class="s-f" href="#"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a class="s-t" href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a class="s-g" href="#"><i class="fab fa-google"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div class="testimonials-slider-block">
+							<div class="testimonials-img" style="background-image: url('img/user.jpg')"></div>
+							<div class="testimonials-about">
+								<div class="testimonials-user">
+									<h3>Richard Richards</h3>
+									<p>Freelancer</p>
+								</div>
+
+								<div class="testimonials-text">
+									<p>Cannabis definitely helps me with some health issues, but let’s be honest, I simply enjoy cannabis! Even though consuming cannabis is legal in CA now, you can’t walk down the street and smoke a joint... the attention it attracts is always negative!!</p>
+								</div>
+
+								<div class="testimonials-soc">
+									<ul>
+										<li><a class="s-f" href="#"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a class="s-t" href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a class="s-g" href="#"><i class="fab fa-google"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
+				<!--<div class="testimonials-arrow">-->
+					<!--<div class="testimonials-prev slick-arrow" style="display: block;"><p>Prev</p></div>-->
+					<!--<div class="testimonials-next slick-arrow" style="display: block;"><p>Next</p></div>-->
+				<!--</div>-->
 			</div>
 
 		</div>

@@ -1,0 +1,128 @@
+#top-line
+  position: absolute
+  top: 0
+  margin: 0
+  left: 0
+  right: 0
+  z-index: 1
+  &.nomain
+    position: static
+    background-color: #f8f8f8
+    .top-line-nav-dop .dop-nav ul li a,
+    .top-line-nav-dop .dop-nav-login p a,
+    .top-line-nav ul li a
+      color: #909090
+  .container
+    max-width: 1706px
+    width: 100%
+    margin: 0 auto
+  .top-line
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &-socials
+      ul
+        display: flex
+        align-items: center
+        list-style-type: none
+        li
+          margin-left: 15px
+
+    &-logo
+      width: 230px
+      img
+        width: 100%
+        height: auto
+    &-nav
+      ul
+        display: flex
+        li
+          list-style-type: none
+          position: relative
+          padding: 0 15px
+          .nav-toggle
+            display: none
+            flex-direction: column
+            align-items: center
+            text-align: center
+            justify-content: center
+            left: 0
+            opacity: 0
+            position: absolute
+            transition: 0.3s
+            top: 90%
+            li
+              padding: 0
+          a
+            text-transform: uppercase
+            color: #ffffff
+            text-decoration: none
+            transition: 0.3s
+            font-weight: 700
+            font-size: 14px
+            &:hover,
+            &.active
+              color: $main-color
+              transition: 0.3s
+          &:hover > ul
+            display: block
+            opacity: 1
+            transition: 0.3s
+            top: 100%
+      &-dop
+        position: relative
+        .dop-nav
+          right: 0
+          width: 293px
+          position: absolute
+          top: 20px
+          ul
+            display: flex
+            align-items: center
+            list-style-type: none
+            li
+              border-right: 1px solid #929aa3
+              padding: 0 15px
+              line-height: 1
+              &:last-child
+                border-right: none
+              a
+                color: #ffffff
+                font-size: 14px
+                font-family: $openSan-font
+                font-weight: 300
+                opacity: 0.66
+
+        .dop-nav-login
+          padding: 24px 0
+          display: flex
+          align-items: center
+          justify-content: flex-end
+          padding-left: 50px
+          p a
+            color: #ffffff
+            font-size: 14px
+            font-weight: 700
+            text-transform: uppercase
+            text-decoration: none
+            transition: 0.3s
+            margin-right: 12px
+            &:hover
+              color: $main-color
+              transition: 0.3s
+
+.breadcrumbs-wrap
+  padding-top: 20px
+  padding-bottom: 160px
+  ul
+    list-style-type: none
+    display: flex
+    li
+      margin-right: 15px
+      color: #909090
+      font-size: 14px
+      a
+        color: $main-color
+        font-family: $poppins-font
+        &:hover
+          text-decoration: none

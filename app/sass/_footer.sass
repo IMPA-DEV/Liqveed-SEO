@@ -1,0 +1,126 @@
+#footer
+  background-image: url("../img/bg-footer.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  .border
+    border-bottom: 1px solid #e4e8e8
+  .footer
+    &-form
+      padding: 67px 0
+      p
+        color: #fff
+        font-size: 48px
+        font-weight: bold
+        font-family: $poppins-font
+        text-align: center
+        text-transform: uppercase
+        line-height: 1.2
+      .form-wrap
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 5px
+        overflow: hidden
+        &-block
+          text-align: center
+          padding-top: 25px
+      form
+        display: inline-block
+        input
+          border: none
+          color: #ffffff
+          height: 66px
+          box-sizing: border-box
+          background-color: $main-color
+        input[type="submit"]
+          font-size: 24px
+          font-family: $poppins-font
+          font-weight: 600
+          cursor: pointer
+          width: 290px
+        input[type="email"]
+          background-color: transparent
+          border: 2px solid $main-color
+          width: 450px
+          padding: 0 15px
+          border-radius: 5px 0 0 5px
+          color: #fff
+          font-size: 24px
+          font-family: $poppins-font
+          &::placeholder
+            color: #fff
+            font-size: 24px
+            font-family: $poppins-font
+          &:focus
+            color: #ffffff
+            transition: 0.3s
+            &::placeholder
+              color: transparent
+              transition: 0.3s
+
+    &-copy
+      color: #fff
+      font-size: 14px
+      font-family: $poppins-font
+      text-align: center
+      background-color: $main-color
+      padding: 6px 0px
+    &-socials
+      padding-top: 45px
+      ul
+        list-style-type: none
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        li
+          margin-left: 30px
+          &:first-child
+            margin-left: 0
+    &-nav
+      &-wrap
+        padding: 47px 0 67px
+        display: flex
+        justify-content: space-between
+      &-right
+        ul
+          list-style-type: none
+        a
+          color: #ffffff
+          font-size: 24px
+          text-decoration: none
+          font-family: $poppins-font
+          transition: 0.3s
+          &:hover
+            color: $main-color
+            transition: 0.3s
+      &-dop
+        display: flex
+        justify-content: space-between
+        ul
+          margin: 0 10px
+          width: 166px
+          text-align: center
+          li
+            line-height: 1
+            padding-bottom: 25px
+            a
+              line-height: 1
+      &-links
+        padding-top: 27px
+        ul
+          display: flex
+          text-align: center
+          align-items: center
+          justify-content: center
+          li
+            border-right: 3px solid #e4e9e9
+            padding: 0 30px
+            line-height: 1
+            opacity: 0.66
+            &:last-child
+              border-right: none
+            a
+              font-weight: normal
+              text-decoration: underline
+              line-height: 1
