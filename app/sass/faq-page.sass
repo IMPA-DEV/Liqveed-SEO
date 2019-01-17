@@ -1,0 +1,28 @@
+@import "vars"
+
+.content-faq
+  margin-bottom: 30px
+  &:last-child
+    margin-bottom: 0
+  h4
+    color: $main-color
+    font-family: $ubuntus-font
+    font-size: 16px
+    font-weight: 500
+    position: relative
+    cursor: pointer
+    &:before
+      content: "+"
+      position: absolute
+      left: -20px
+      transition: 0.3s
+    &.active
+      &:before
+        content: "-"
+  &-text
+    padding-top: 15px
+    display: none
+
+.form-section
+  .form-wrap
+    padding-top: 36px

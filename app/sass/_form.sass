@@ -1,0 +1,41 @@
+@import "vars"
+
+form.main-form
+  input, textarea
+    font-family: $poppins-font
+    font-size: 14px
+    color: #787878
+    text-align: center
+    background-color: #f2f2f2
+    width: 100%
+    border: none
+    padding: 20px
+    border-radius: 30px
+    box-sizing: border-box
+    &::placeholder
+      font-family: $poppins-font
+      font-size: 14px
+      color: #787878
+      text-align: center
+    &.btn-main
+      width: auto
+  textarea
+    resize: none
+    height: 180px
+  input[type="submit"]
+    width: auto
+
+.input-wraper, textarea
+  margin-bottom: 20px
+
+.input-50
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  .input-wraper
+    width: 49%
+
+.form-btn
+  text-align: center
+
+
