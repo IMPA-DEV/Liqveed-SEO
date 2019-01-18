@@ -1,0 +1,61 @@
+.tabs-content-locations
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  .store-block
+    padding: 0 10px 20px
+    h3
+      font-family: $poppins-font
+      color: #787878
+      font-size: 24px
+      font-weight: bold
+    a
+      color: $main-color
+      transition: 0.3s
+      &:hover
+        text-decoration: none
+        transition: 0.3s
+
+#map
+  background-image: url("../img/locations-map.jpg")
+  background-position: center
+  background-repeat: no-repeat
+  background-size: contain
+  height: 560px
+
+.google-map
+  padding-top: 55px
+  position: relative
+
+.map-form
+  position: absolute
+  padding-top: 25px
+  padding-left: 25px
+  form
+    display: inline-block
+  .form-wrap
+    display: flex
+    align-items: center
+    border-radius: 5px
+    overflow: hidden
+    .input-wrap input
+      background-color: #fff
+      color: #909090
+      border: none
+      border: 2px solid #0ccccc
+      width: 390px
+      box-sizing: border-box
+      padding: 16px 15px
+  input[type="submit"]
+    color: #fff
+    cursor: pointer
+    font-size: 18px
+    font-family: $poppins-font
+    text-transform: uppercase
+    font-weight: bold
+    width: 200px
+    box-sizing: border-box
+    border: none
+    padding: 12px 15px
+    background: none
+    background-color: $main-color
