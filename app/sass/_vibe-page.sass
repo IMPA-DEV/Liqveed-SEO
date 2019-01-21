@@ -1,7 +1,36 @@
 .device-block-wrap
+  > div
+    position: relative
   .border
     border-bottom: 1px solid $main-color
-    //position: absolute
+    position: absolute
+  .device
+    &-1-l
+      width: 390px
+      top: 42px
+      left: 15px
+    &-1-r
+      top: 118px
+      left: 52%
+      width: 475px
+      text-align: right
+    &-2-l
+      width: 375px
+      left: 10%
+      top: 90px
+    &-2-r
+      bottom: 46px
+      width: 410px
+      text-align: right
+      left: 64%
+    &-3-l
+      width: 220px
+      left: 11%
+    &-3-r
+      width: 462px
+      text-align: right
+      left: 50%
+      bottom: 95px
   p
     color: #909090
     font-size: 42px
@@ -15,12 +44,28 @@
 .vibe-btn
   text-align: center
   padding: 80px 0 145px
+  a
+    position: relative
+    &:before,
+    &:after
+      content: ""
+      width: 100%
+      position: absolute
+      height: 2px
+      top: 50%
+      background-color: $main-color
+    &:before
+      left: -130%
+    &:after
+      right: -130%
 
 .what-is-block
   display: flex
   align-items: center
   justify-content: space-between
   margin-bottom: 28px
+  &-wrap
+    padding-bottom: 140px
   &:last-child
     margin-bottom: 0
   div:first-child
@@ -48,3 +93,59 @@
     img
       max-width: 100%
       height: auto
+
+.play-btn
+  background-image: url("../img/ButtonPlay.png")
+  width: 96px
+  height: 96px
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+.look-block
+  display: flex
+  justify-content: center
+  &-wrap
+    position: relative
+  &-play
+    position: absolute
+    top: 36%
+    width: 100%
+    left: 0
+    right: 0
+    z-index: 1
+    text-align: center
+    .play-btn
+      background-image: url("../img/ButtonPlay.png")
+      width: 96px
+      height: 96px
+      background-position: center
+      background-repeat: no-repeat
+      display: inline-block
+      margin-right: 33px
+  &-text
+    margin-top: 64px
+    background-image: url("../img/MountainVIBEtext.png")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    width: 585px
+    height: 344px
+    padding-left: 110px
+    box-sizing: border-box
+    padding-top: 60px
+    .title-block
+      text-align: left
+      padding-bottom: 30px
+      &-h2
+        text-align: left
+        color: #fff
+      &-p
+        margin-left: 60px
+        &:after
+          display: none
+.look-block-p
+  color: #e0e0e0
+  font-family: $poppins-font
+  font-weight: 300
+  font-size: 16px
+
