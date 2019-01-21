@@ -1,0 +1,94 @@
+table.cart-table
+  border-collapse: separate
+  border-spacing: 5px
+  .product
+    display: flex
+    align-items: center
+  thead
+    td
+      color: #909090
+      font-family: $ubuntus-font
+      font-size: 24px
+      font-weight: bold
+  tr
+    height: 98px
+  td
+    border-bottom: 1px solid #f2f2f2
+  button
+    background-color: transparent
+    border: none
+    cursor: pointer
+    color: #909090
+    font-weight: bold
+    transition: 0.3s
+    outline: none
+    &:hover
+      color: red
+      transition: 0.3s
+  .img-table-product
+    width: 120px
+    padding: 0 50px 0 15px
+    img
+      display: flex
+      align-items: center
+      justify-content: center
+  .name-products
+    font-size: 16px
+    font-family: $poppins-font
+    color: #909090
+  .stock
+    font-size: 14px
+    font-family: $ubuntus-font
+    color: #909090
+  .total,
+  .price
+    font-family: $ubuntus-font
+    color: $main-color
+    font-weight: bold
+  .quantity input
+    background-color: #f2f2f2
+    border: none
+    width: 125px
+    height: 46px
+    box-sizing: border-box
+    padding: 5px 35px
+    -webkit-border-radius: 30px
+    border-radius: 30px
+    color: #787878
+    font-family: $poppins-font
+    font-size: 16px
+    font-weight: 300
+
+.total-cart
+  padding-top: 74px
+  padding-right: 30px
+  p
+    color: #323232
+    font-size: 16px
+    font-family: $poppins-font
+    text-align: right
+    font-weight: bold
+  #total-cart
+    color: #4ba924
+
+.total-btn-wrap
+  padding-top: 40px
+  text-align: right
+  .transp
+    background: transparent
+    color: $main-color
+    transition: 0.3s
+    &:hover
+      color: #fff
+      background: $main-color
+      transition: 0.3s
+  .orange
+    background: #f5821f
+    border-color: rgba(255, 252, 250, 0.44)
+    margin-left: 20px
+    transition: 0.3s
+    &:hover
+      background: rgba(255, 252, 250, 0.44)
+      border-color: #f5821f
+      color: #f5821f
+      transition: 0.3s
