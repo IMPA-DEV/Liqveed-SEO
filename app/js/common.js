@@ -152,7 +152,7 @@ $(function() {
         ]
     });
 
-    //testimonials slider
+    //shop slider
     $('.shop-slider').slick({
         infinite: true,
         speed: 1000,
@@ -173,6 +173,19 @@ $(function() {
                 }
             }
         ]
+    });
+
+    //news slider
+    $('.news-slider').slick({
+        infinite: true,
+        speed: 1000,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $('.news-prev'),
+        nextArrow: $('.news-next'),
     });
 
 
