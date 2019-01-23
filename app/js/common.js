@@ -208,8 +208,48 @@ $(function() {
 
 });
 
+/* mixit UP */
 $(function () {
     /* mixit up */
     var containerEl = document.querySelector('.shop-slider');
     var mixer = mixitup(containerEl);
+});
+
+// Calendar events
+// https://s-sd.ru/files/Calendar/index.html
+$(function(){
+    var data = [
+        { "date": "2019-01-23 10:15:20", "title": "Title 1", "description": "Description - Lorem Ipsum dolor set"},
+        { "date": "2019-01-23 10:15:20", "title": "Title 2", "description": "Description - Lorem Ipsum dolor set"},
+
+        { "date": "2019-01-20 20:15:20", "title": "Event", "description": "Description - Lorem Ipsum dolor set"},
+        { "date": "2019-01-10 20:15:20", "title": "Event some", "description": "Description - Lorem Ipsum dolor set"},
+    ];
+    $('#eventCalendar').eventCalendar({
+        jsonData: data,
+        eventsjson: 'data.json',
+        jsonDateFormat: 'human',
+        startWeekOnMonday: false,
+        openEventInNewWindow: true,
+        dateFormat: 'DD-MM-YYYY',
+        showDescription: false,
+        locales: {
+            locale: "en",
+            txt_noEvents: "Select Month or orange day",
+            txt_SpecificEvents_prev: "",
+            txt_SpecificEvents_after: "Events:",
+            txt_NextEvents: "Events:",
+            txt_GoToEventUrl: "Look",
+            moment: {
+                "months" : [ "January", "February", "March", "April", "May", "June",
+                    "July", "August", "September", "October", "November", "December" ],
+                "monthsShort" : [ "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ],
+                "weekdays" : [ "Воскресенье", "Понедельник","Вторник","Среда","Четверг",
+                    "Пятница","Суббота" ],
+                "weekdaysShort" : [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ],
+                "weekdaysMin" : [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ],
+            }
+        }
+    });
 });
